@@ -1,0 +1,50 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Student_CSBS.master.cs" Inherits="STUDENT.Student_CSBS" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+     <title></title>
+    <style>
+        a{
+            font-size:20px;
+            color:black;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="background-color:lightgray">
+    <form id="form1" runat="server">
+        <table style="width: 100%; background-color: green; text-align: center; border-style: solid;
+        border-radius: 20px; padding:20px">
+        <tr>
+            <td style="font-size:larger">
+                Welcome To VNR Student Portal
+            </td>
+        </tr>
+    </table>
+        <br />
+    <table style="width: 100%; background-color: lightgray; text-align: center;
+        border-radius: 20px;padding:8px">
+        <tr>
+            <td>
+                <a href="StudentHome_CSBS.aspx">Home</a>
+            </td>
+            <td>
+                <a href="Marks_CSBS.aspx">Request Marks</a>
+            </td>
+            <td>
+                <asp:LinkButton ID="link" runat="server" Text="Logout" onclick="link_Click"></asp:LinkButton>
+            </td>
+        </tr>
+    </table>
+    <div style="border-style: solid; padding: 20px; margin: 20px">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            <%--body--%>
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
+
